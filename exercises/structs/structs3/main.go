@@ -1,7 +1,5 @@
 // structs3
 // Make me compile!
-//
-// I AM NOT DONE
 package main
 
 import "fmt"
@@ -9,6 +7,10 @@ import "fmt"
 type Person struct {
 	firstName string
 	lastName  string
+}
+
+func (this *Person) FullName() string {
+	return this.firstName + " " + this.lastName
 }
 
 func main() {
